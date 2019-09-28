@@ -39,9 +39,13 @@ for root, dirs, files in os.walk("G:\igem_page2"):
                 lines[i] = lines[i].replace(a[j], b[j])
             for j in range(len(jscss)):
                 if jscss[j].endswith(".js"):
-                    lines[i] = lines[i].replace(jscss[j], (jscss[j]).replace('.', '-')[:-3] + "-js?action=raw&ctype=text/javascript")
+                    lines[i] = lines[i].replace(jscss[j], (jscss[j]).replace('.', '-')[
+                                                          :-3] + "-js?action=raw&ctype=text/javascript")
                 else:
-                    lines[i] = lines[i].replace(jscss[j], (jscss[j]).replace('.', '-')[:-4] + "-css?action=raw&ctype=text/css")
+                    lines[i] = lines[i].replace(jscss[j],
+                                                (jscss[j]).replace('.', '-')[:-4] + "-css?action=raw&ctype=text/css")
+            lines[i] = lines[i].replace("<p", "<div")
+            lines[i] = lines[i].replace("/p>", "/div>")
 
         with open(path, "w", encoding='utf-8') as filex:
             filex.writelines(lines)
