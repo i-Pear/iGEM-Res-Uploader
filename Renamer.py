@@ -21,6 +21,9 @@ with open(r"C:\Users\ipear\Desktop\out.txt") as file:
         a.append(lines[i * 2][:-1])
         b.append(lines[i * 2 + 1][:-1])
 
+a.append("<head>")
+b.append('<head>'+'\n'+'<script src="https://2019.igem.org/Team:NEU_CHINA/pos-js?action=raw&ctype=text/javascript"></script>')
+
 for root, dirs, files in os.walk("G:\igem_page2"):
     for file in files:
         if not (file.endswith(".css") or file.endswith(".html") or file.endswith(".js")):

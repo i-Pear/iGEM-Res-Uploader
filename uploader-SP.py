@@ -17,6 +17,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support import expected_conditions
 
+a = []
+b = []
+
 
 # 用于设置剪切板内容
 def setText(aString):
@@ -55,6 +58,12 @@ def combinKey(keys):
 
 if __name__ == '__main__':
 
+    with open(r"C:\Users\ipear\Desktop\pageR.txt") as file:
+        lines = file.readlines()
+        for i in range(len(lines) // 2):
+            a.append(lines[i * 2][:-1])
+            b.append(lines[i * 2 + 1][:-1])
+
     d = DesiredCapabilities.CHROME
     d['loggingPrefs'] = {'browser': 'ALL', 'performance': 'ALL'}
     options = webdriver.ChromeOptions()
@@ -72,6 +81,12 @@ if __name__ == '__main__':
     for root, dirs, files in os.walk(parPath):
         for file in files:
             if not (file.endswith("-css") or file.endswith(".html") or file.endswith("-js")): continue
+            ifSP = False
+            for spFname in a:
+                if spFname in file:
+                    ifSP = True
+                    break
+            if not ifSP: continue
             print("Found: " + file)
             FileCount += 1
     FileCountCnt = 0
@@ -84,7 +99,16 @@ if __name__ == '__main__':
 
     for root, dirs, files in os.walk(parPath):
         for file in files:
+
             if not (file.endswith("-css") or file.endswith(".html") or file.endswith("-js")):
+                continue
+
+            ifSP = False
+            for spFname in a:
+                if spFname in file:
+                    ifSP = True
+                    break
+            if not ifSP:
                 continue
 
             FileCountCnt += 1
@@ -98,6 +122,9 @@ if __name__ == '__main__':
             text = ""
             for i in range(len(lines)):
                 text = text + lines[i]  # Combine
+
+            for j in range(len(a)):
+                webPathSeg = webPathSeg.replace(a[j], b[j])
 
             webPath = "https://2019.igem.org/wiki/index.php?title=Team:NEU_CHINA" + webPathSeg + "&action=edit"
             browser.get(webPath)
