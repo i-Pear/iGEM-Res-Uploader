@@ -35,20 +35,22 @@ if __name__ == '__main__':
     print("Press enter after you login in")
     i = input()
 
+    countCnt = 0
     for res in resList:
-        browser.get("https://2019.igem.org/File:" + res)
+        browser.get("https://2019.igem.org/File:T--NEU_CHINA--" + res)
         herf = "NULL!"
         try:
             WebDriverWait(browser, 10).until(lambda x: len(x.find_elements_by_link_text("Original file"))
-                                                       + len(x.find_elements_by_link_text(res)))
+                                                       + len(x.find_elements_by_link_text("T--NEU_CHINA--" + res)))
             if len(browser.find_elements_by_link_text("Original file")) > 0:
                 href = browser.find_element_by_link_text("Original file").get_attribute("href")
             else:
-                href = browser.find_element_by_link_text(res).get_attribute("href")
+                href = browser.find_element_by_link_text("T--NEU_CHINA--" + res).get_attribute("href")
         except expected_conditions:
             print("", end='')
 
-        ofs.write(res + "\t" + href + "\n")
-        print(res)
+        ofs.write(res + "\n" + href + "\n")
+        countCnt += 1
+        print('[', countCnt, '/', len(resList), '] ', res)
 
     ofs.close()

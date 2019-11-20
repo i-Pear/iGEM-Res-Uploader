@@ -84,11 +84,18 @@ if __name__ == '__main__':
 
     for root, dirs, files in os.walk(parPath):
         for file in files:
+
+
+            # !!! Ignoring all except html
+            #if not file.endswith(".html"):
+            #    continue
+
+
             if not (file.endswith("-css") or file.endswith(".html") or file.endswith("-js")):
                 continue
 
             FileCountCnt += 1
-            print("[ ", FileCountCnt, '/', FileCount, ']  ', sep='', end='')
+            print("[", FileCountCnt, '/', FileCount, ']  ', sep='', end='')
             print("Uploading " + file)
             path = os.path.join(root, file)
             webPathSeg = (path[len(parPath):]).replace('\\', '/')

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dddda47d-7499-4b9c-a5bf-e6d068f43125" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploader-SP.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Renamer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renamer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getName.py" beforeDir="false" afterPath="$PROJECT_DIR$/getName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/uploader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,11 +60,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>getAvailableLogTypes</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -248,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.uploader-SP">
+  <component name="RunManager" selected="Python.Renamer">
     <configuration name="Renamer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="VirtualSpider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -368,9 +364,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Renamer" />
         <item itemvalue="Python.uploader-SP" />
         <item itemvalue="Python.uploader" />
-        <item itemvalue="Python.Renamer" />
         <item itemvalue="Python.getName" />
         <item itemvalue="Python.Res Uploader" />
       </list>
@@ -402,6 +398,18 @@
       <workItem from="1570191972628" duration="651000" />
       <workItem from="1570202295828" duration="1252000" />
       <workItem from="1570251916168" duration="1054000" />
+      <workItem from="1570337569080" duration="10000" />
+      <workItem from="1570376918253" duration="11175000" />
+      <workItem from="1570417288342" duration="846000" />
+      <workItem from="1570430938635" duration="895000" />
+      <workItem from="1570460651562" duration="4000" />
+      <workItem from="1571472370182" duration="1204000" />
+      <workItem from="1571540004008" duration="3499000" />
+      <workItem from="1571543728863" duration="5638000" />
+      <workItem from="1571563971732" duration="5679000" />
+      <workItem from="1571572960294" duration="1363000" />
+      <workItem from="1571579036874" duration="75000" />
+      <workItem from="1572348793629" duration="65000" />
     </task>
     <servers />
   </component>
@@ -421,12 +429,21 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="i" />
+        <watch expression="c[82]" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$main.coverage" NAME="main Coverage Results" MODIFIED="1569229400327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$Renamer.coverage" NAME="Renamer Coverage Results" MODIFIED="1570190460447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$uploader_SP.coverage" NAME="uploader-SP Coverage Results" MODIFIED="1570251927042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$uploader.coverage" NAME="uploader Coverage Results" MODIFIED="1570203878301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$getName.coverage" NAME="getName Coverage Results" MODIFIED="1569230142509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$Renamer.coverage" NAME="Renamer Coverage Results" MODIFIED="1571579082448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$uploader_SP.coverage" NAME="uploader-SP Coverage Results" MODIFIED="1571571048032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$Res_Uploader.coverage" NAME="Res Uploader Coverage Results" MODIFIED="1571567145695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$uploader.coverage" NAME="uploader Coverage Results" MODIFIED="1571570370248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iGEM_Res_Uploader$getName.coverage" NAME="getName Coverage Results" MODIFIED="1571569140050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="masterDetails">
     <states>

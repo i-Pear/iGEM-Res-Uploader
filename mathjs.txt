@@ -1,0 +1,23 @@
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+showProcessingMessages: false,
+    messageStyle: "none",
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] ,
+   showMathMenu: false
+     }
+  });
+</script>
+
+<script type="text/javascript" async
+        src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js">
+</script>
+

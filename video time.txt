@@ -1,0 +1,44 @@
+6.3 开始进入人体 1
+The alarm is warning! “gut firemen”, let’s go!
+ok use 
+
+16.00 黑屏 开始进入地图展示 2
+“gut firemen” are preparing!
+ok use 1
+
+29.8 （引导用户 提示拖动NO 3
+IBD is burning wildly in patients’guts, “gut 
+ok use 2
+
+36.2 风扇下触发 4
+Good job! Let’s get the rest parts of our accelerator.
+ok use 3
+
+46.8 风扇上触发 5
+The accelerator is on! It’s time to put out those annoying fires.
+ok
+
+63.9 上传送带触发 6
+Come on! We need more supply!
+ok
+
+83.2 下传送带触发 7
+Here we go, eliminate the IBD and recover the intestine.
+ok
+
+93.5 游戏部分退出 8
+“gut firemen” are fighting!
+ok
+
+101.9 准备裂解（引导用户拖动冰块 9
+The fires have been put out! Drug the ices to the thermometer! We must leave here!
+ok
+
+110.2 游戏结束 准备显示NEU-CHINA 10
+thanks for your watching! Produced by NEU_CHINA
+ok
+
+960 540
+1440 810
+
+https://2019.igem.org/wiki/images/6/63/T--NEU_CHINA--Game_Source_Render_1.3.mp4
